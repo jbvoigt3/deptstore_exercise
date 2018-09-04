@@ -1,0 +1,12 @@
+<h1>Department Maintenance</h1>
+<hr />
+<%= form_for @depts do |f| %>
+  <%= f.label:name %>
+  <%= f.text_field:name %>
+
+  <%= f.label:loc %>
+  <%= f.text_field:loc %>
+  
+  <%= f.submit %>
+  
+<% end %>
