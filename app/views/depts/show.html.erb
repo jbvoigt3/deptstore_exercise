@@ -1,4 +1,9 @@
-<h1><%= @depts.name.upcase %></h1>
+<h1><%= @dept.name.upcase %></h1>
 <hr />
-<p><%= @depts.loc %></p>
-<%= link_to 'Back', depts_path %>
+<p>What would you like to do?</p>
+<br />
+<%= link_to 'Edit Dept Information', edit_dept_path(@dept) %>
+<br />
+<%= link_to 'Delete Dept', @dept, method: :delete %>
+<br />
+<%= link_to 'Go Back', depts_path %> 
