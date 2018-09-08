@@ -1,0 +1,17 @@
+Done
+1. app created
+2. Gem files modified
+3. Db created
+4. Git files set up
+5. Add CSS framework (if desired)
+6. Create models
+7. Create Db
+8. Migrate models
+  a.  set any associations
+  b.  db:Migrate
+9. Start server
+10. Enter test data
+
+10. Create controllers
+11. Modify routes
+12. Set up views

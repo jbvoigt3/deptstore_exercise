@@ -1,7 +1,10 @@
-<h1>Click on Department to view items available</h1>
-<%= link_to 'Add a new Dept', new_dept_path %>
+<h1>Departments</h1>
+<%= link_to 'Add Dept', new_dept_path%>
+<hr />
 <ul>
   <% @depts.each do |e| %>
-    <li><%= link_to e.name, dept_path(e) %></li>
-  <% end %>
+    <li>
+      <%= link_to e.name, e  %>
+    </li>
+  <%end%>
 </ul>

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  
-resources :depts
+  root 'depts#index'  
+  resources :depts do
+    resources :products do  
+      resources :items
+    end
+  end
 end

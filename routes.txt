@@ -1,4 +1,5 @@
                    Prefix Verb   URI Pattern                                                                              Controller#Action
+                     root GET    /                                                                                        depts#index
                     depts GET    /depts(.:format)                                                                         depts#index
                           POST   /depts(.:format)                                                                         depts#create
                  new_dept GET    /depts/new(.:format)                                                                     depts#new
@@ -7,6 +8,22 @@
                           PATCH  /depts/:id(.:format)                                                                     depts#update
                           PUT    /depts/:id(.:format)                                                                     depts#update
                           DELETE /depts/:id(.:format)                                                                     depts#destroy
+                 products GET    /products(.:format)                                                                      products#index
+                          POST   /products(.:format)                                                                      products#create
+              new_product GET    /products/new(.:format)                                                                  products#new
+             edit_product GET    /products/:id/edit(.:format)                                                             products#edit
+                  product GET    /products/:id(.:format)                                                                  products#show
+                          PATCH  /products/:id(.:format)                                                                  products#update
+                          PUT    /products/:id(.:format)                                                                  products#update
+                          DELETE /products/:id(.:format)                                                                  products#destroy
+                    items GET    /items(.:format)                                                                         items#index
+                          POST   /items(.:format)                                                                         items#create
+                 new_item GET    /items/new(.:format)                                                                     items#new
+                edit_item GET    /items/:id/edit(.:format)                                                                items#edit
+                     item GET    /items/:id(.:format)                                                                     items#show
+                          PATCH  /items/:id(.:format)                                                                     items#update
+                          PUT    /items/:id(.:format)                                                                     items#update
+                          DELETE /items/:id(.:format)                                                                     items#destroy
        rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
 rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
        rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
